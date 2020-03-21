@@ -8,8 +8,14 @@ def write_to_file(people, file):
                    "Email".ljust(25), "Position".ljust(12), "Full/PartTime", "Salary".rjust(15), "\n"]
         f.writelines(headers)
         for person in people:
+            fn = person.get_firstName().ljust(12)
+            ln = person.get_lastName().ljust(12)
+            email = person.get_email().ljust(25)
+            pos = person.get_position().ljust(12)
+            full_part = person.get_full_part_time().ljust(12)
+            salary = person.get_salary().rjust(15)
             f.write(
-                f"{person.get_firstName():<12}{person.get_lastName():<12}{person.get_email():<25}{person.get_position():<12}{person.get_full_part_time():<12}{person.get_salary():>15}\n")
+                f"{fn}{ln}{email}{pos}{full_part}{salary}\n")
 
 
 def read_file(file):
