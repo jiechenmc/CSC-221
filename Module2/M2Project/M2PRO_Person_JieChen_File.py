@@ -5,11 +5,11 @@
 def write_to_file(people, file):
     with open(file, "w") as f:
         headers = ["FirstName".ljust(12), "LastName".ljust(12),
-                   "Email".ljust(25), "Position".ljust(12), "Full/PartTime", "Salary".rjust(10), "\n"]
+                   "Email".ljust(25), "Position".ljust(12), "Full/PartTime", "Salary".rjust(15), "\n"]
         f.writelines(headers)
         for person in people:
             f.write(
-                f"{person.get_firstName():<12}{person.get_lastName():<12}{person.get_email():<25}{person.get_position():<12}{person.get_full_part_time():<12}{person.get_salary():>10}\n")
+                f"{person.get_firstName():<12}{person.get_lastName():<12}{person.get_email():<25}{person.get_position():<12}{person.get_full_part_time():<12}{person.get_salary():>15}\n")
 
 
 def read_file(file):
