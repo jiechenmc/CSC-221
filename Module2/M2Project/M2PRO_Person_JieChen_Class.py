@@ -27,7 +27,7 @@ class Person:
 
 
 class Employee(Person):
-    def __init__(self, firstName, lastName, position, salary, full_part_time):
+    def __init__(self, firstName, lastName, position, full_part_time, salary):
         self.__firstName = firstName
         self.__lastName = lastName
         email = f"{firstName}.{lastName}@company.com"

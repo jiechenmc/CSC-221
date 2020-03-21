@@ -1,1 +1,3 @@
-jie	chen                	jie.chen@company.com	Manager                	FULLL	100k
+First Name	Last Name		Email	Position	Full/Part Time	Salary
+2         	         2                	2.2@company.com	2                	2	2
+2         	         2                	2.2@company.com	2                	2	2

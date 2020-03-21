@@ -16,13 +16,15 @@ def enter_Info():
     numOfEmployee = int(input("How many employees do you want to enter? "))
     employees = []
     for employee in range(numOfEmployee):
-        fn = input(f"Input first name{employee+1}: ")
-        ln = input(f"Input last name{employee+1}: ")
-        pos = input(f"Input position{employee+1}: ")
-        full_part = input(f"Input full/part time{employee+1}: ")
-        salary = input(f"Input salary{employee+1}")
+        fn = input(f"Input first name for employee {employee+1}: ").title()
+        ln = input(f"Input last name for employee {employee+1}: ").title()
+        pos = input(f"Input position for employee {employee+1}: ").title()
+        full_part = input(
+            f"Input full/part time for employee {employee+1}: ").title()
+        salary = input(f"Input salary for employee {employee+1}: ")
         employees.append(Employee(fn, ln, pos, full_part, salary))
-    print(employees)
+        print("")
+    write_to_file(employees, "employee.txt")
 
 
 def Read_Info():
@@ -31,10 +33,12 @@ def Read_Info():
 
 def main():
     choice = menu()
+    while choice != 1 and choice != 2:
+        choice = menu()
     if choice == 1:
         enter_Info()
     elif choice == 2:
         pass
 
 
-menu()
+main()
