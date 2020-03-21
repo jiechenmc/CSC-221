@@ -1,3 +1,2 @@
-FirstName	LastName				Email				Position		Full/Part Time			Salary
-Jie         Chen                Jie.Chen@company.com	Manager                Full           100000
-Jenny       Guo                Jenny.Guo@company.com	Manager                Full           2
+FirstName	LastName				Email				Position		Full/PartTime			Salary
+S           S                S.S@company.com	S                S              s

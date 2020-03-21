@@ -38,6 +38,10 @@ class Employee(Person):
         self.__full_part_time = full_part_time
         super().__init__(firstName, lastName, email)
 
+    def __repr__(self):
+        return f"Employee(firstName={self.__firstName}, lastName={self.__lastName}, email={self.__email},\
+                          position={self.__position}, full_part_time={self.__full_part_time}, salary={self.__salary})"
+
     def set_position(self, position):
         self.__position = position
 
