@@ -27,18 +27,27 @@ def enter_Info():
     write_to_file(employees, "employee.txt")
 
 
-def Read_Info():
-    pass
+def read_Info():
+    try:
+        read_file("employee.txt")
+    except:
+        print("File does not exist!")
 
 
 def main():
-    choice = menu()
-    while choice != 1 and choice != 2:
+    while True:
         choice = menu()
-    if choice == 1:
-        enter_Info()
-    elif choice == 2:
-        pass
+        while choice != 1 and choice != 2 and choice != 3:
+            choice = menu()
+        if choice == 1:
+            enter_Info()
+            continue
+        elif choice == 2:
+            read_Info()
+            continue
+        elif choice == 3:
+            print("Bye!")
+            break
 
 
 main()
