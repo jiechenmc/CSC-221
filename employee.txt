@@ -1,3 +1,0 @@
-FirstName   LastName    Email                    Position    Full/PartTime         Salary
-Jie         Chen        Jie.Chen@company.com     Manager     Full              100000000
-Jenny       Guo         Jenny.Guo@company.com    Waiter      Part                    100
