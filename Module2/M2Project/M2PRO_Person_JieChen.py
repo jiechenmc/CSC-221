@@ -45,13 +45,6 @@ def enter_Info():
     write_to_file(employees, "employee.txt")
 
 
-def read_Info():
-    try:
-        read_file("employee.txt")
-    except:
-        print("File does not exist!")
-
-
 def main():
     while True:
         choice = menu()
@@ -61,7 +54,7 @@ def main():
             enter_Info()
             continue
         elif choice == 2:
-            read_Info()
+            read_file("employee.txt")
             continue
         elif choice == 3:
             print("Bye!")

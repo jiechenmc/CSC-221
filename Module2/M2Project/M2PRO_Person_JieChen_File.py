@@ -13,9 +13,12 @@ def write_to_file(people, file):
 
 
 def read_file(file):
-    with open(file, "r") as f:
-        for line in f:
-            print(line)
+    try:
+        with open(file, "r") as f:
+            for line in f:
+                print(line)
+    except:
+        print("file don't exist!")
 
 
 if __name__ == "__main__":
@@ -23,3 +26,5 @@ if __name__ == "__main__":
     emp_1 = Employee("Jie", "Chen", "Manager", "Full", "100")
     emp_2 = Employee("Jenny", "Guo", "Waiter", "Part", "100")
     write_to_file([emp_1, emp_2], "employee.txt")
+
+    read_file("employee.txt")
