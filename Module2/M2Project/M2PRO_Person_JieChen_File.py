@@ -1,3 +1,7 @@
+# This file contains functions used to manipulate files
+# Work in progress!
+
+
 def write_to_file(people, file):
     with open(file, "w") as f:
         f.write(

@@ -1,6 +1,24 @@
 from M2PRO_Person_JieChen_Class import Employee
 from M2PRO_Person_JieChen_File import write_to_file, read_file
 
+# Entering and Reading records
+# 3/20/20
+# CSC121 M2HW – Students Class
+# Jie Chen
+
+# The program will display a menu with choices
+# if 1:
+#   prompt the user for how many employees to enter
+#   then gather data on that employee
+#   make an employee object
+#   write the data into employee.txt
+# if 2:
+#   read the contents of employee.txt
+#   if file dont exist:
+#       let the user know
+# if 3:
+# The program terminates
+
 
 def menu():
     print("""
