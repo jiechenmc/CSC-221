@@ -3,6 +3,10 @@
 
 
 class Person:
+    """
+    The base class
+    """
+
     def __init__(self, firstName, lastName, email):
         self.__firstName = firstName
         self.__lastName = lastName
@@ -28,6 +32,10 @@ class Person:
 
 
 class Employee(Person):
+    """
+    The employee class constructor => Employee(firstName, lastName, position, full_part_time, salary)
+    """
+
     def __init__(self, firstName, lastName, position, full_part_time, salary):
         self.__firstName = firstName
         self.__lastName = lastName

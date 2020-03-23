@@ -31,6 +31,9 @@ def menu():
 
 
 def enter_Info():
+    """
+    This function asks the user for Employee info and then writes it to employee.txt
+    """
     numOfEmployee = int(input("How many employees do you want to enter? "))
     employees = []
     for employee in range(numOfEmployee):
