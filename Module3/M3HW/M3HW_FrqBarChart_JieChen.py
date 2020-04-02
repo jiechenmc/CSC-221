@@ -32,3 +32,8 @@ df = pd.DataFrame(top20, columns=['word', 'count'])
 axes = df.plot.bar(x='word', y='count', legend=False)
 
 # Part 2
+mask_image = imageio.imread('mask_star.png')
+wordcloud = WordCloud(width=1000, height=1000,
+                      colormap='prism', mask=mask_image, background_color='white')
+wordcloud = wordcloud.generate(str(top20))
+wordcloud = wordcloud.to_file('RomeoAndJulietHeart.png')
