@@ -3,6 +3,13 @@
 # CSC221 M3HW – FrqBarChart
 # Jie Chen
 
+
+# No user Input
+# The program analyzes the occourence of each word in romeo and juliet
+# Creates a bar graph that shows frequency
+# Creates a worldcloud with the highest frequency word the largest
+
+
 # Part 1
 from textblob import TextBlob
 from nltk.corpus import stopwords
