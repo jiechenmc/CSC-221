@@ -4661,8 +4661,3 @@ is given a unique identity in the form  [XXX].
 CHANGES TO THE TEXT:
 Character names were expanded.  For Example, BARABAS was BARA.,
 FERNEZE was FERN., etc.
-
-
-
-
-
