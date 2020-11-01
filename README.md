@@ -1,3 +1,3 @@
 # CSC-221
 
-Dual enrollment class Fayetteville Technical Community College.
+Dual enrollment class at Fayetteville Technical Community College.
